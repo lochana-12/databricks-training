@@ -11,10 +11,10 @@ How to Run
 3. Execute queries from queries.sql
 
 Topics Covered
--> Basic Queries  
--> String Matching Queries
--> Date Queries
--> Aggregate Queries  
+- Basic Queries  
+- String Matching Queries
+- Date Queries
+- Aggregate Queries  
 
 Learning Outcome-
 Gain hands-on experience in writing basic SQL queries, filtering data, performing aggregations, and analyzing structured data using SQL.
