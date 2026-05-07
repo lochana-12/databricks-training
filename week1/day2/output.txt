@@ -1,0 +1,337 @@
+GROUP BY QUERIES:-
+Query 21: Total Salary for Each Department
+department_id | SUM(salary)
+NULL          | 48000.0
+1             | 195000.0
+2             | 110000.0
+3             | 100000.0
+4             | 123000.0
+
+Query 22: Average Age of Employees in Each Department
+department_id | AVG(age)
+NULL          | 32.0
+1             | 33.3333
+2             | 31.5
+3             | 32.5
+4             | 34.0
+
+Query 23: Number of Employees Hired in Each Year
+YEAR(hire_date) | COUNT(*)
+2018            | 2
+2019            | 2
+2020            | 2
+2021            | 3
+2022            | 1
+
+Query 24: Highest Salary in Each Department
+department_id | MAX(salary)
+NULL          | 48000.0
+1             | 80000.0
+2             | 60000.0
+3             | 55000.0
+4             | 70000.0
+
+Query 25: Department with Highest Average Salary
+department_id
+1
+
+
+HAVING QUERIES:-
+Query 26: Departments with More Than 2 Employees
+department_id | COUNT(*)
+1             | 3
+
+Query 27: Departments with Average Salary Greater Than 55000
+department_id | AVG(salary)
+1             | 65000.0
+4             | 61500.0
+
+Query 28: Years with More Than 1 Employee Hired
+YEAR(hire_date) | COUNT(*)
+2018            | 2
+2019            | 2
+2020            | 2
+2021            | 3
+
+Query 29: Departments with Total Salary Expense Less Than 100000
+department_id | SUM(salary)
+NULL          | 48000.0
+
+Query 30: Departments with Maximum Salary Above 75000
+department_id | MAX(salary)
+1             | 80000.0
+
+
+ORDER BY QUERIES:-
+Query 31: Employees Ordered by Salary Ascending
+emp_id | name         | age | salary  | department_id | hire_date
+4      | Alice Blue   | 25  | 45000.0 | 3             | 2021-03-22
+8      | Frank White  | 32  | 48000.0 | NULL          | 2021-07-10
+1      | John Doe     | 28  | 50000.0 | 1             | 2020-01-15
+5      | Charlie P.   | 29  | 50000.0 | 2             | 2019-12-01
+10     | Hannah Lee   | 30  | 53000.0 | 4             | 2020-02-25
+7      | Eve Black    | 40  | 55000.0 | 3             | 2021-08-30
+2      | Jane Smith   | 34  | 60000.0 | 2             | 2019-07-23
+9      | Grace Kelly  | 27  | 65000.0 | 1             | 2018-11-13
+6      | David Green  | 38  | 70000.0 | 4             | 2022-05-18
+3      | Bob Brown    | 45  | 80000.0 | 1             | 2018-02-12
+
+Query 32: Employees Ordered by Age Descending
+emp_id | name         | age | salary  | department_id | hire_date
+3      | Bob Brown    | 45  | 80000.0 | 1             | 2018-02-12
+7      | Eve Black    | 40  | 55000.0 | 3             | 2021-08-30
+6      | David Green  | 38  | 70000.0 | 4             | 2022-05-18
+2      | Jane Smith   | 34  | 60000.0 | 2             | 2019-07-23
+8      | Frank White  | 32  | 48000.0 | NULL          | 2021-07-10
+10     | Hannah Lee   | 30  | 53000.0 | 4             | 2020-02-25
+5      | Charlie P.   | 29  | 50000.0 | 2             | 2019-12-01
+1      | John Doe     | 28  | 50000.0 | 1             | 2020-01-15
+9      | Grace Kelly  | 27  | 65000.0 | 1             | 2018-11-13
+4      | Alice Blue   | 25  | 45000.0 | 3             | 2021-03-22
+
+Query 33: Employees Ordered by Hire Date Ascending
+emp_id | name         | age | salary  | department_id | hire_date
+3      | Bob Brown    | 45  | 80000.0 | 1             | 2018-02-12
+9      | Grace Kelly  | 27  | 65000.0 | 1             | 2018-11-13
+2      | Jane Smith   | 34  | 60000.0 | 2             | 2019-07-23
+5      | Charlie P.   | 29  | 50000.0 | 2             | 2019-12-01
+1      | John Doe     | 28  | 50000.0 | 1             | 2020-01-15
+10     | Hannah Lee   | 30  | 53000.0 | 4             | 2020-02-25
+4      | Alice Blue   | 25  | 45000.0 | 3             | 2021-03-22
+8      | Frank White  | 32  | 48000.0 | NULL          | 2021-07-10
+7      | Eve Black    | 40  | 55000.0 | 3             | 2021-08-30
+6      | David Green  | 38  | 70000.0 | 4             | 2022-05-18
+
+Query 34: Employees Ordered by Department and Salary
+emp_id | name         | age | salary  | department_id | hire_date
+8      | Frank White  | 32  | 48000.0 | NULL          | 2021-07-10
+1      | John Doe     | 28  | 50000.0 | 1             | 2020-01-15
+9      | Grace Kelly  | 27  | 65000.0 | 1             | 2018-11-13
+3      | Bob Brown    | 45  | 80000.0 | 1             | 2018-02-12
+5      | Charlie P.   | 29  | 50000.0 | 2             | 2019-12-01
+2      | Jane Smith   | 34  | 60000.0 | 2             | 2019-07-23
+4      | Alice Blue   | 25  | 45000.0 | 3             | 2021-03-22
+7      | Eve Black    | 40  | 55000.0 | 3             | 2021-08-30
+10     | Hannah Lee   | 30  | 53000.0 | 4             | 2020-02-25
+6      | David Green  | 38  | 70000.0 | 4             | 2022-05-18
+
+Query 35: Departments Ordered by Total Salary
+name       | SUM(e.salary)
+IT         | 195000.0
+Marketing  | 123000.0
+HR         | 110000.0
+Finance    | 100000.0
+
+
+JOIN QUERIES:-
+Query 36: Employee Names with Department Names
+Employee Name | Department Name
+John Doe      | IT
+Bob Brown     | IT
+Grace Kelly   | IT
+Jane Smith    | HR
+Charlie P.    | HR
+Alice Blue    | Finance
+Eve Black     | Finance
+David Green   | Marketing
+Hannah Lee    | Marketing
+
+Query 37: Project Names with Department Names
+Project Name      | Department Name
+Project Alpha     | IT
+Project Gamma     | IT
+Project Theta     | IT
+Project Beta      | HR
+Project Delta     | Finance
+Project Eta       | Finance
+Project Epsilon   | Marketing
+Project Zeta      | Marketing
+Project Iota      | NULL
+
+Query 38: Employee Names and Corresponding Project Names
+Employee Name | Project Name
+John Doe      | Project Alpha
+Bob Brown     | Project Alpha
+Grace Kelly   | Project Alpha
+Jane Smith    | Project Beta
+Charlie P.    | Project Beta
+John Doe      | Project Gamma
+Bob Brown     | Project Gamma
+Grace Kelly   | Project Gamma
+Alice Blue    | Project Delta
+Eve Black     | Project Delta
+David Green   | Project Epsilon
+Hannah Lee    | Project Epsilon
+David Green   | Project Zeta
+Hannah Lee    | Project Zeta
+Alice Blue    | Project Eta
+Eve Black     | Project Eta
+John Doe      | Project Theta
+Bob Brown     | Project Theta
+Grace Kelly   | Project Theta
+
+Query 39: Employees and Their Departments Including NULL Departments
+Employee Name | Department Name
+John Doe      | IT
+Bob Brown     | IT
+Grace Kelly   | IT
+Jane Smith    | HR
+Charlie P.    | HR
+Alice Blue    | Finance
+Eve Black     | Finance
+David Green   | Marketing
+Hannah Lee    | Marketing
+Frank White   | NULL
+
+Query 40: Departments and Their Employees
+Department Name | Employee Name
+IT              | John Doe
+IT              | Bob Brown
+IT              | Grace Kelly
+HR              | Jane Smith
+HR              | Charlie P.
+Finance         | Alice Blue
+Finance         | Eve Black
+Marketing       | David Green
+Marketing       | Hannah Lee
+
+Query 41: Employees Not Assigned to Any Project
+name
+Frank White
+
+Query 42: Departments and Number of Projects
+Name | COUNT(project_id)
+Finance         | 2
+HR              | 1
+IT              | 3
+Marketing       | 2
+
+Query 43: Departments with No Employees
+No results found
+
+Query 44: Employees in Same Department as John Doe
+name
+John Doe
+Bob Brown
+Grace Kelly
+
+Query 45: Department with Highest Average Salary
+name
+IT
+
+
+NESTED AND CORRELATED QUERIES:-
+Query 46: Employee with Highest Salary
+emp_id | name       | age | salary | department_id | hire_date
+3      | Bob Brown  | 45  | 80000  | 1             | 2018-02-12
+
+Query 47: Employees with Salary Above Average Salary
+emp_id | name         | age | salary | department_id | hire_date
+2      | Jane Smith   | 34  | 60000  | 2             | 2019-07-23
+3      | Bob Brown    | 45  | 80000  | 1             | 2018-02-12
+6      | David Green  | 38  | 70000  | 4             | 2022-05-18
+9      | Grace Kelly  | 27  | 65000  | 1             | 2018-11-13
+
+Query 48: Second Highest Salary
+MAX(salary)
+70000.0
+
+Query 49: Department with Most Employees
+department_id
+1
+
+Query 50: Employees Earning More Than Department Average
+emp_id | name         | age | salary | department_id | hire_date
+2      | Jane Smith   | 34  | 60000  | 2             | 2019-07-23
+3      | Bob Brown    | 45  | 80000  | 1             | 2018-02-12
+6      | David Green  | 38  | 70000  | 4             | 2022-05-18
+7      | Eve Black    | 40  | 55000  | 3             | 2021-08-30
+
+Query 51: Third Highest Salary
+salary
+65000.0
+
+Query 52: Employees Older Than All HR Employees
+emp_id | name         | age | salary | department_id | hire_date
+3      | Bob Brown    | 45  | 80000  | 1             | 2018-02-12
+6      | David Green  | 38  | 70000  | 4             | 2022-05-18
+7      | Eve Black    | 40  | 55000  | 3             | 2021-08-30
+
+Query 53: Departments Where Average Salary Greater Than 55000
+department_id
+1
+4
+
+Query 54: Employees Working in Departments with At Least 2 Projects
+emp_id | name         | age | salary | department_id | hire_date
+1      | John Doe     | 28  | 50000  | 1             | 2020-01-15
+3      | Bob Brown    | 45  | 80000  | 1             | 2018-02-12
+4      | Alice Blue   | 25  | 45000  | 3             | 2021-03-22
+6      | David Green  | 38  | 70000  | 4             | 2022-05-18
+7      | Eve Black    | 40  | 55000  | 3             | 2021-08-30
+9      | Grace Kelly  | 27  | 65000  | 1             | 2018-11-13
+10     | Hannah Lee   | 30  | 53000  | 4             | 2020-02-25
+
+
+Query 55: Employees Hired on Same Date as Jane Smith
+
+emp_id | name        | age | salary | department_id | hire_date
+2      | Jane Smith  | 34  | 60000  | 2             | 2019-07-23
+
+
+COMBINED MODERATE DIFFICULTY QUERIES:-
+Query 56: Total Salary of Employees Hired in 2020
+SUM(salary)
+103000.0
+
+Query 57: Average Salary of Employees in Each Department
+department_id | AVG(salary)
+1             | 65000.0
+4             | 61500.0
+2             | 55000.0
+3             | 50000.0
+NULL          | 48000.0
+
+Query 58: Departments with More Than 1 Employee and Average Salary Greater Than 55000
+department_id | COUNT(*) | AVG(salary)
+1             | 3        | 65000.0
+4             | 2        | 61500.0
+
+Query 59: Employees Hired in Last 2 Years
+No results found
+
+Query 60: Total Employees and Average Salary for Departments with More Than 2 Employees
+department_id | COUNT(*) | AVG(salary)
+1             | 3        | 65000.0
+
+Query 61: Employees with Salary Above Department Average
+name         | salary
+Jane Smith   | 60000.0
+Bob Brown    | 80000.0
+David Green  | 70000.0
+Eve Black    | 55000.0
+
+Query 62: Employees Hired on Same Date as Oldest Employee
+name
+Bob Brown
+
+Query 63: Departments with Total Number of Projects
+name       | COUNT(project_id)
+IT         | 3
+Marketing  | 2
+Finance    | 2
+HR         | 1
+
+Query 64: Highest Salary Employee in Each Department
+name         | salary
+Jane Smith   | 60000.0
+Bob Brown    | 80000.0
+David Green  | 70000.0
+Eve Black    | 55000.0
+
+Query 65: Employees Older Than Department Average Age
+name         | salary
+Jane Smith   | 60000.0
+Bob Brown    | 80000.0
+David Green  | 70000.0
+Eve Black    | 55000.0
