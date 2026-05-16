@@ -2,7 +2,9 @@
 
 ## Files
 data_creation.sql → Creates tables and inserts data
+
 queries.sql       → Contains 50 SQL queries
+
 output.txt        → Contains query outputs
 
 
