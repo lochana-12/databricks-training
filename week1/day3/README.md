@@ -1,4 +1,4 @@
-# Day 3 - SQL Joins Assignment
+# SQL Practice – Week 1 Day 3
 
 ## Topics Covered
 - LEFT JOIN
@@ -9,9 +9,8 @@
 - NULL handling in joins
 - Multi-table joins
 
----
 
-# Database Used
+## Database Used
 Online Learning Platform Database
 
 ## Tables
@@ -19,8 +18,6 @@ Online Learning Platform Database
 2. courses
 3. enrollments
 4. instructors
-
----
 
 # Concepts Practiced
 
@@ -41,8 +38,6 @@ Used LEFT JOIN with NULL conditions to identify:
 - students without enrollments
 - courses without instructors
 - courses without enrollments
-
----
 
 # Queries Implemented
 
