@@ -13,43 +13,43 @@ output.txt        → Contains query outputs
 
 
 ## Topics Covered
-1. SELECT Queries
+1. SELECT Queries--
    Used to retrieve data from a table.
    Example: Display employee names, salaries, and departments.
 
-2. WHERE Clause
+2. WHERE Clause--
    Used to filter records based on conditions.
    Example: Employees with salary greater than 70000.
 
-3. GROUP BY
+3. GROUP BY--
    Used to group rows with similar values for aggregation.
    Example: Department-wise total salary.
 
-4. HAVING Clause
+4. HAVING Clause--
    Used to filter grouped data after aggregation.
    Example: Departments having more than 3 employees.
 
-5. DISTINCT Keyword
+5. DISTINCT Keyword--
    Used to display unique values without duplicates.
    Example: Unique department names and cities.
 
-6. Comparison Operators
+6. Comparison Operators--
    Used to compare values in conditions.
    Operators: =, >, <, >=, <=, <>
 
-7. Logical Operators
+7. Logical Operators--
    Used to combine multiple conditions.
    Operators: AND, OR, NOT
 
-8. IN and NOT IN
+8. IN and NOT IN--
    Used to match values from a given list.
    Example: Employees from Hyderabad or Mumbai.
 
-9. BETWEEN Operator
+9. BETWEEN Operator--
    Used to filter values within a specific range.
    Example: Salary BETWEEN 50000 AND 80000.
 
-10. LIKE Operator
+10. LIKE Operator--
     Used for pattern matching in text data.
     Example: Names starting with 'R' or containing 'v'.
 
