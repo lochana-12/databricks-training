@@ -1,0 +1,130 @@
+NUMBER MANIPULATION FUNCTIONS IN MYSQL
+
+Query 1-
+
+absolute_value
+100
+
+
+Query 2-
+
+rounded_salary
+75001
+65000
+85001
+70000
+60001
+
+
+Query 3-
+
+rounded_salary
+75000.75
+65000.40
+85000.90
+70000.10
+60000.55
+
+
+Query 4-
+
+ceil_salary
+75001
+65001
+85001
+70001
+60001
+
+
+Query 5-
+
+floor_salary
+75000
+65000
+85000
+70000
+60000
+
+
+Query 6-
+
+truncated_salary
+75000.7
+65000.4
+85000.9
+70000.1
+60000.5
+
+
+Query 7-
+
+remainder
+0
+0
+0
+1
+1
+
+
+Query 8-
+
+power_result
+8
+
+
+Query 9-
+
+pow_result
+25
+
+
+Query 10-
+
+square_root
+8
+
+
+Query 11-
+
+sign_value
+1
+1
+1
+1
+1
+
+
+Query 12-
+
+random_number
+0.5823419281
+
+
+Query 13-
+
+formatted_salary
+75,000.75
+65,000.40
+85,000.90
+70,000.10
+60,000.55
+
+
+Query 14-
+
+emp_name | greatest_value
+Karthik | 75000.75
+Veena   | 65000.40
+Ravi    | 85000.90
+Anil    | 70000.10
+Suresh  | 60000.55
+
+
+Query 15-
+
+emp_name | least_value
+Karthik | 5000.50
+Veena   | 4000.25
+Ravi    | 6000.75
+Anil    | 0
+Suresh  | 3000.30
