@@ -28,8 +28,8 @@ Execute queries from queries.sql
 ## Real-Time Business Queries
 
 ### Used for practical business scenarios like:
-Orders placed today
-Orders in last 7 days
+- Orders placed today
+- Orders in last 7 days
 
 ## Learning Outcome
 Gain hands-on experience in using MySQL Date & Timestamp functions for extracting, formatting, filtering, and performing calculations on date/time data in real-world business scenarios.
