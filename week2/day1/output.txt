@@ -1,0 +1,269 @@
+NULL FUNCTIONS IN MYSQL
+
+
+Query 1
+
+emp_id | name  | salary | bonus | manager_id
+2      | John  | NULL   | 5000  | 102
+4      | David | NULL   | NULL  | 103
+6      | Kiran | NULL   | NULL  | NULL
+8      | Neha  | NULL   | 2000  | NULL
+
+
+Query 2
+
+order_id | customer_name | amount | discount | coupon_code
+102      | John          | NULL   | 50       | NULL
+105      | Priya         | 1500   | 100      | NULL
+108      | Neha          | NULL   | 200      | DISC15
+
+
+Query 3
+
+product_id | product_name | price | category | stock
+3          | Tablet       | 30000 | NULL     | 5
+4          | Headphones   | NULL  | NULL     | NULL
+7          | Mouse        | 500   | NULL     | NULL
+
+
+Query 4
+
+total_null_managers
+3
+
+
+Query 5
+
+name  | salary
+Amit  | 50000
+John  | 0
+Sara  | 60000
+David | 0
+Priya | 45000
+Kiran | 0
+Ravi  | 70000
+Neha  | 0
+
+
+Query 6
+
+name  | bonus
+Amit  | 1000
+John  | 5000
+Sara  | 1000
+David | 1000
+Priya | 3000
+Kiran | 1000
+Ravi  | 7000
+Neha  | 2000
+
+
+Query 7
+
+order_id | amount
+101      | 1000
+102      | 500
+103      | 2000
+104      | 500
+105      | 1500
+106      | 500
+107      | 3000
+108      | 500
+
+
+Query 8
+
+product_name | stock
+Laptop       | 10
+Phone        | 0
+Tablet       | 5
+Headphones   | 0
+Monitor      | 0
+Keyboard     | 15
+Mouse        | 0
+Printer      | 3
+
+
+Query 9
+
+name  | earnings
+Amit  | 50000
+John  | 5000
+Sara  | 60000
+David | NULL
+Priya | 45000
+Kiran | NULL
+Ravi  | 70000
+Neha  | 2000
+
+
+Query 10
+
+name  | income
+Amit  | 50000
+John  | 5000
+Sara  | 60000
+David | 0
+Priya | 45000
+Kiran | 0
+Ravi  | 70000
+Neha  | 2000
+
+
+Query 11
+
+product_name | price
+Laptop       | 50000
+Phone        | 1000
+Tablet       | 30000
+Headphones   | 1000
+Monitor      | 20000
+Keyboard     | 1000
+Mouse        | 500
+Printer      | 1000
+
+
+Query 12
+
+customer_name | payment
+Amit          | 1000
+John          | 50
+Sara          | 2000
+David         | 0
+Priya         | 1500
+Kiran         | 0
+Ravi          | 3000
+Neha          | 200
+
+
+Query 13
+
+salary
+50000
+NULL
+60000
+NULL
+45000
+NULL
+70000
+NULL
+
+
+Query 14
+
+discount
+NULL
+50
+NULL
+NULL
+100
+NULL
+NULL
+200
+
+
+Query 15
+
+result
+NULL
+NULL
+NULL
+NULL
+15.0
+NULL
+NULL
+NULL
+
+
+Query 16
+
+coupon_code
+NULL
+NULL
+DISC20
+NULL
+NULL
+DISC5
+NULL
+DISC15
+
+
+Query 17
+
+name  | total_earnings
+Amit  | 50000
+John  | 5000
+Sara  | 60000
+David | 0
+Priya | 48000
+Kiran | 0
+Ravi  | 77000
+Neha  | 2000
+
+
+Query 18
+
+emp_id | name  | salary | bonus | manager_id
+4      | David | NULL   | NULL  | 103
+6      | Kiran | NULL   | NULL  | NULL
+
+
+Query 19
+
+product_id | product_name | price | category    | stock
+2          | Phone        | NULL  | Electronics | NULL
+6          | Keyboard     | NULL  | Accessories | 15
+8          | Printer      | NULL  | Electronics | 3
+
+
+Query 20
+
+order_id | customer_name | amount | discount | coupon_code
+104      | David         | NULL   | NULL     | NULL
+106      | Kiran         | NULL   | NULL     | DISC5
+
+
+Query 21
+
+name  | income
+Amit  | 50000
+John  | 5000
+Sara  | 60000
+David | 1000
+Priya | 45000
+Kiran | 1000
+Ravi  | 70000
+Neha  | 2000
+
+
+Query 22
+
+discount
+NULL
+50
+NULL
+NULL
+100
+NULL
+NULL
+200
+
+
+Query 23
+
+customer_name | final_amount
+Amit          | 1000
+John          | -50
+Sara          | 2000
+David         | 0
+Priya         | 1400
+Kiran         | 0
+Ravi          | 3000
+Neha          | -200
+
+
+Query 24
+
+emp_id | name  | salary | bonus | manager_id
+2      | John  | NULL   | 5000  | 102
+4      | David | NULL   | NULL  | 103
