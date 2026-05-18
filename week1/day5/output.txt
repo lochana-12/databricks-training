@@ -1,0 +1,260 @@
+DATE & TIMESTAMP FUNCTIONS IN MYSQL 
+
+Query 1 
+
+CURDATE()
+2026-05-18
+
+Query 2 
+
+CURRENT_DATE()
+2026-05-18
+
+
+Query 3 
+
+CURTIME()
+05:51:29
+
+
+Query 4 
+
+CURRENT_TIME()
+05:51:29
+
+
+Query 5 
+
+NOW()
+2026-05-18 05:51:29
+
+
+Query 6 
+
+CURRENT_TIMESTAMP()
+2026-05-18 05:51:29
+
+
+Query 7 
+
+YEAR(order_date) | MONTH(order_date) | DAY(order_date)
+2024             | 1                 | 15
+2024             | 2                 | 18
+2024             | 3                 | 2
+2024             | 3                 | 9
+2024             | 1                 | 7
+
+
+Query 8 
+
+EXTRACT| EXTRACT | EXTRACT
+2024 | 1 | 15
+2024 | 2 | 18
+2024 | 3 | 2
+2024 | 3 | 9
+2024 | 1 | 7
+
+
+Query 9 Output
+
+MONTHNAME(order_date) | DAYNAME(order_date)
+January | Monday
+February | Sunday
+March | Saturday
+March | Saturday
+January | Sunday
+
+
+Query 10 
+
+WEEKDAY(order_date) | DAYOFWEEK(order_date)
+0 | 2
+6 | 1
+5 | 7
+5 | 7
+6 | 1
+
+
+Query 11 
+
+order_id | order_date
+2 | 2024-02-18
+3 | 2024-03-02
+4 | 2024-03-09
+5 | 2024-01-07
+
+
+Query 12 
+
+order_id | order_date
+2 | 2024-02-18
+3 | 2024-03-02
+4 | 2024-03-09
+5 | 2024-01-07
+
+
+Query 13 
+
+order_id | order_date
+1 | 2024-01-15
+
+
+Query 14 
+
+order_date | added_5_da
+2024-01-15 | 2024-01-20
+2024-02-18 | 2024-02-23
+2024-03-02 | 2024-03-07
+2024-03-09 | 2024-03-14
+2024-01-07 | 2024-01-12
+
+
+Query 15 
+
+order_date | subtracted_3_days
+2024-01-15 | 2024-01-12
+2024-02-18 | 2024-02-15
+2024-03-02 | 2024-02-28
+2024-03-09 | 2024-03-06
+2024-01-07 | 2024-01-04
+
+
+Query 16
+
+order_date | added_1_month
+2024-01-15 | 2024-02-15
+2024-02-18 | 2024-03-18
+2024-03-02 | 2024-04-02
+2024-03-09 | 2024-04-09
+2024-01-07 | 2024-02-07
+
+
+Query 17 
+
+order_date | subtracted_2_months
+2024-01-15 | 2023-11-15
+2024-02-18 | 2023-12-18
+2024-03-02 | 2024-01-02
+2024-03-09 | 2024-01-09
+2024-01-07 | 2023-11-07
+
+
+Query 18 
+
+order_date | added_1_year
+2024-01-15 | 2025-01-15
+2024-02-18 | 2025-02-18
+2024-03-02 | 2025-03-02
+2024-03-09 | 2025-03-09
+2024-01-07 | 2025-01-07
+
+
+Query 19 
+
+order_id | delivery_days
+1 | 5
+2 | 4
+3 | 6
+4 | 6
+5 | 5
+
+
+Query 20 
+
+days_diff | months_diff
+5 | 0
+4 | 0
+6 | 0
+6 | 0
+5 | 0
+
+
+Query 21 
+
+last_day_of_month
+2024-01-31
+2024-02-29
+2024-03-31
+2024-03-31
+2024-01-31
+
+
+Query 22 
+
+first_day_of_month
+2024-01-01
+2024-02-01
+2024-03-01
+2024-03-01
+2024-01-01
+
+
+Query 23 
+
+formatted_date
+15-01-2024
+18-02-2024
+02-03-2024
+09-03-2024
+07-01-2024
+
+
+Query 24 
+
+formatted_date
+January 15, 2024
+February 18, 2024
+March 02, 2024
+March 09, 2024
+January 07, 2024
+
+
+Query 25 
+
+converted_date
+2024-01-15
+
+
+Query 26 
+
+formatted_timestamp
+15-01-2024 10:30:45
+18-02-2024 18:45:20
+02-03-2024 09:15:10
+09-03-2024 14:05:55
+07-01-2024 23:55:00
+
+
+Query 27 
+
+order_id | customer_name | order_date | order_timestamp | delivery_date | order_amount
+
+1 | Karthik | 2024-01-15 | 2024-01-15 10:30:45 | 2024-01-20 | 2500.0
+5 | Suresh | 2024-01-07 | 2024-01-07 23:55:00 | 2024-01-12 | 2900.0
+
+
+Query 28 
+
+order_id | customer_name | order_date | order_timestamp | delivery_date | order_amount
+2 | Veena | 2024-02-18 | 2024-02-18 18:45:20 | 2024-02-22 | 3200.5
+
+
+Query 29 
+
+order_date | financial_year
+2024-01-15 | 2023-2024
+2024-02-18 | 2023-2024
+2024-03-02 | 2023-2024
+2024-03-09 | 2023-2024
+2024-01-07 | 2023-2024
+
+
+Query 30 
+
+There are no results to be displayed.
+
+
+
+Query 31 
+
+There are no results to be displayed.
