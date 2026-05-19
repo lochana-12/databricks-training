@@ -1,0 +1,236 @@
+REGEX BASIC
+
+Query 1
+
+mixed_value  | extracted_value
+abc123xyz    | NULL
+test45done   | NULL
+run9fast     | NULL
+go88home     | NULL
+data77lake   | NULL
+spark12sql   | NULL
+etl999job    | NULL
+cloud7aws    | NULL
+hdfs34node   | NULL
+map5reduce   | NULL
+
+Query 2
+
+mixed_value  | extracted_value
+abc123xyz    | z
+test45done   | e
+run9fast     | t
+go88home     | e
+data77lake   | e
+spark12sql   | l
+etl999job    | b
+cloud7aws    | s
+hdfs34node   | e
+map5reduce   | e
+abc1         | 1
+x9           | 9
+z88          | 8
+q777         | 7
+karthik99    | 9
+etl1         | 1
+etl22        | 2
+etl333       | 3
+etl4444      | 4
+etl55555     | 5
+
+Query 3
+
+mixed_value  | extracted_value
+abc123xyz    | a
+test45done   | t
+run9fast     | r
+go88home     | g
+data77lake   | d
+spark12sql   | s
+etl999job    | e
+cloud7aws    | c
+hdfs34node   | h
+map5reduce   | m
+abc1         | a
+x9           | x
+z88          | z
+q777         | q
+karthik99    | k
+
+Query 4
+
+mixed_value  | extracted_value
+abc123xyz    | z
+test45done   | e
+run9fast     | t
+go88home     | e
+data77lake   | e
+spark12sql   | l
+etl999job    | b
+cloud7aws    | s
+hdfs34node   | e
+map5reduce   | e
+
+Query 5
+
+mixed_value  | extracted_value
+abc123xyz    | 12
+test45done   | 
+go88home     | 
+data77lake   | 
+spark12sql   | 12
+etl999job    | 
+hdfs34node   | 
+z88          | 
+q777         | 
+karthik99    | 
+
+Query 6
+
+mixed_value  | extracted_value
+abc123xyz    | 1
+spark12sql   | 1
+abc1         | 1
+etl1         | 1
+a1b2         | 1
+aa1          | 1
+t1           | 1
+
+Query 7
+
+phone            | country_code
++91-9876543210   | 91
++1-7654321098    | 1
++44-9988776655   | 44
++61-8899776655   | 61
+91-8899001122    | 91
+01-9988776655    | 01
+44-6677889900    | 44
+61-4455667788    | 61
+
+Query 8
+
+mixed_value  | extracted_number
+abc123xyz    | 123xyz
+test45done   | tst45on
+run9fast     | run9fst
+go88home     | go88hom
+data77lake   | t77lk
+spark12sql   | sprk12sql
+etl999job    | tl999jo
+cloud7aws    | lou7ws
+
+Query 9
+
+email                 | username
+karthik@gmail.com     | karthik
+rahul@yahoo.com       | rahul
+john@outlook.com      | john
+steve@gmail.com       | steve
+arjun@company.in      | arjun
+meera@gmail.com       | meera
+
+Query 10
+
+email                 | domain_name
+karthik@gmail.com     | gmail.com
+rahul@yahoo.com       | yahoo.com
+john@outlook.com      | outlook.com
+steve@gmail.com       | gmail.com
+arjun@company.in      | company.in
+
+Query 11
+
+email                 | domain_only
+karthik@gmail.com     | gmail.com
+rahul@yahoo.com       | yahoo.com
+john@outlook.com      | outlook.com
+steve@gmail.com       | gmail.com
+arjun@company.in      | company.in
+
+Query 12
+
+email                 | extension
+karthik@gmail.com     | com
+rahul@yahoo.com       | com
+john@outlook.com      | com
+arjun@company.in      | in
+alice@company.au      | au
+harry@company.co.uk   | uk
+
+Query 13
+
+mixed_value  | alphabets
+abc123xyz    | abc
+test45done   | tes
+run9fast     | run
+go88home     | go8
+data77lake   | dat
+spark12sql   | spa
+
+Query 14
+
+mixed_value  | numbers
+abc123xyz    | NULL
+test45done   | NULL
+run9fast     | NULL
+go88home     | NULL
+data77lake   | NULL
+
+Query 15
+
+full_text      | first_three
+EMP001_IN_91   | EMP
+EMP002_US_01   | EMP
+EMP003_UK_44   | EMP
+USR11_IN       | USR
+ACC_1001_91    | ACC
+ORD-11-IN      | ORD
+
+Query 16
+
+full_text      | last_two
+EMP001_IN_91   | 91
+EMP002_US_01   | 01
+EMP003_UK_44   | 44
+USR11_IN       | IN
+ORD-11-IN      | IN
+TEST001        | 01
+
+Query 17
+
+full_text      | employee_number
+EMP001_IN_91   | 001
+EMP002_US_01   | 002
+EMP003_UK_44   | 003
+USR11_IN       | 11_
+ACC_1001_91    | _10
+ORD-11-IN      | -11
+
+Query 18
+
+full_text      | country_code
+EMP001_IN_91   | 91
+EMP002_US_01   | 01
+EMP003_UK_44   | 44
+USR11_IN       | IN
+ORD-11-IN      | IN
+
+Query 19
+
+full_text      | middle_text
+EMP001_IN_91   | IN
+EMP002_US_01   | US
+EMP003_UK_44   | UK
+ACC_1001_91    | 1001
+ACC_1002_01    | 1002
+
+Query 20
+
+phone            | country_code
++91-9876543210   | 91
++1-7654321098    | 1
++44-9988776655   | 44
++61-8899776655   | 61
+91-8899001122    | 91
+01-9988776655    | 01
