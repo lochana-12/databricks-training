@@ -1,4 +1,4 @@
-# Week2 Day4
+# SQL Practice-Week2 Day4
 # REGEX Foundation
 
 ## Objective
