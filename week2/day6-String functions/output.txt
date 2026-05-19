@@ -1,0 +1,205 @@
+STRING FUNCTIONS IN MYSQL
+
+Query 1
+
+full_name         | LENGTH(full_name)
+
+Karthik Kondpak   | 15
+Veena Reddy       | 11
+Ravi kumar        | 10
+Anil              | 4
+Suresh            | 8
+
+
+Query 2
+
+full_name         | CHAR_LENGTH(full_name)
+
+Karthik Kondpak   | 15
+Veena Reddy       | 11
+Ravi kumar        | 10
+Anil              | 4
+Suresh            | 8
+
+
+Query 3
+
+UPPER(department) | LOWER(city)
+
+DATA ENGINEERING  | hyderabad
+ANALYTICS         | bangalore
+DATA SCIENCE      | chennai
+DEVOPS            | pune
+DATA ENGINEERING  | hyderabad
+
+
+Query 4
+
+TRIM(full_name)   | LTRIM(full_name) | RTRIM(full_name)
+
+Karthik Kondpak   | Karthik Kondpak  | Karthik Kondpak
+Veena Reddy       | Veena Reddy      | Veena Reddy
+Ravi kumar        | Ravi kumar       | Ravi kumar
+Anil              | Anil             | Anil
+Suresh            | Suresh           | Suresh
+
+
+Query 5
+
+emp_details
+
+Karthik Kondpak - Data Engineering
+Veena Reddy - Analytics
+Ravi kumar - Data Science
+Anil - DEVOPS
+Suresh - data engineering
+
+
+Query 6
+
+CONCAT_WS(' | ', emp_id, full_name, city)
+
+1 | Karthik Kondpak | Hyderabad
+2 | Veena Reddy     | Bangalore
+3 | Ravi kumar      | Chennai
+4 | Anil            | Pune
+5 | Suresh          | hyderabad
+
+
+Query 7
+
+SUBSTRING(email, 1, 7)
+
+karthik
+veena_r
+ravi.ku
+anil@ab
+suresh@
+
+
+Query 8
+
+SUBSTR(email, 1, 5)
+
+karth
+veena
+ravi.
+anil@
+sures
+
+
+Query 9
+
+LEFT(full_name, 4) | RIGHT(city, 3)
+
+Kart                | bad
+Veen                | ore
+Ravi                | nai
+Anil                | une
+Sur                 | ad
+
+
+Query 10
+
+email                 | INSTR(email, '@')
+
+karthik.k@gmail.com   | 10
+veena_r@company.com   | 8
+ravi.kumar@org.in     | 11
+anil@abc.com          | 5
+suresh@xyz.com        | 7
+
+
+Query 11
+
+email                 | LOCATE('.', email)
+
+karthik.k@gmail.com   | 8
+veena_r@company.com   | 16
+ravi.kumar@org.in     | 5
+anil@abc.com          | 9
+suresh@xyz.com        | 11
+
+
+Query 12
+
+REPLACE(department, 'Data', 'Big Data')
+
+Big Data Engineering
+Analytics
+Big Data Science
+DEVOPS
+data engineering
+
+
+Query 13
+
+full_name         | REVERSE(full_name)
+
+Karthik Kondpak   | kapdnoK kihtraK
+Veena Reddy       | yddeR aneeV
+Ravi kumar        | ramuk ivaR
+Anil              | linA
+Suresh            | hseruS
+
+
+Query 14
+
+LPAD(emp_id, 5, '0')
+
+00001
+00002
+00003
+00004
+00005
+
+
+Query 15
+
+RPAD(city, 15, '*')
+
+Hyderabad******
+Bangalore******
+Chennai********
+Pune***********
+hyderabad*****
+
+
+Query 16
+
+TRIM(REPLACE(city, ' ', ''))
+
+Hyderabad
+Bangalore
+Chennai
+Pune
+hyderabad
+
+
+Query 17
+
+full_name         | IFNULL(remarks, 'No remarks')
+
+Karthik Kondpak   | Top performer
+Veena Reddy       | Excellent communication
+Ravi kumar        | Needs improvement
+Anil              | No remarks
+Suresh            |
+
+
+Query 18
+
+full_name         | COALESCE(remarks, 'N/A')
+
+Karthik Kondpak   | Top performer
+Veena Reddy       | Excellent communication
+Ravi kumar        | Needs improvement
+Anil              | N/A
+Suresh            |
+
+
+Query 19
+
+FIND_IN_SET('Analytics', 'Data,Analytics,AI')
+
+2
