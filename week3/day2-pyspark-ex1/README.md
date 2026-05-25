@@ -37,6 +37,7 @@ Examples:
 
 ### FILTER / WHERE
 Used to filter records based on conditions.
+
 Examples:
 - Salary greater than 70000
 - Employees from Hyderabad
