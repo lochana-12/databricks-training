@@ -23,6 +23,7 @@
 
 ### SELECT
 Used to retrieve specific columns from DataFrame.
+
 Examples:
 - Selecting employee names and salaries
 - Selecting department-wise columns
@@ -30,6 +31,7 @@ Examples:
 
 ### ALIAS
 Used to rename columns temporarily using `alias()`.
+
 Examples:
 - emp_name AS employee_name
 - salary AS monthly_salary
@@ -46,6 +48,7 @@ Examples:
 
 ### WITHCOLUMNRENAMED
 Used to permanently rename columns in DataFrame.
+
 Examples:
 - Rename emp_name to employee_name
 - Rename department to dept
@@ -53,6 +56,7 @@ Examples:
 
 ### WITHCOLUMN
 Used to create new calculated or derived columns.
+
 Examples:
 - Bonus calculation
 - Annual salary
@@ -62,6 +66,7 @@ Examples:
 
 ### TYPECASTING
 Used to convert columns into different datatypes.
+
 Examples:
 - Convert salary to integer
 - Convert joining_date to date
@@ -69,6 +74,7 @@ Examples:
 
 ### SORT / ORDERBY
 Used to sort records in ascending or descending order.
+
 Examples:
 - Sort by salary ascending/descending
 - Sort by age
@@ -77,6 +83,7 @@ Examples:
 
 ### LIMIT
 Used to restrict the number of rows displayed.
+
 Examples:
 - First 5 records
 - Top 10 employees
