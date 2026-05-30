@@ -46,6 +46,13 @@ Examples:
 - Employees from HR department
 - Employees whose names start with 'S'
 
+### WITHCOLUMNRENAMED
+Used to permanently rename columns in DataFrame.
+
+Examples:
+- Rename emp_name to employee_name
+- Rename department to dept
+- Rename salary to monthly_salary
 
 ---
 
