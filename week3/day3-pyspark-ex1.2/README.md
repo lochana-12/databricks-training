@@ -1,4 +1,4 @@
-# PySpark Practice – Week 3 Day 2
+# PySpark Practice – Week 3 Day 3
 
 ## Files
 - `data_creation.py` → Creates Employee DataFrame with sample employee records  
